@@ -1,0 +1,24 @@
+[module "0810cc6d-5e86-31a3-876c-56350422bb1d"]
+	conflict = request-pull
+	path = AddressService
+	pull = merge subtree
+	pull = squash never
+	ref = if refs/heads/main sync refs/heads/main
+	url = agnostic://gh/766800768
+[module "6bd7b7eb-2b95-34e3-8b43-5c4a90e86a2d"]
+	conflict = request-pull
+	path = EmployeeService
+	pull = merge subtree
+	pull = squash never
+	ref = if refs/heads/main sync refs/heads/main
+	url = agnostic://gh/766807461
+[map "ce675e88-3338-3431-bdcc-6096b9bd7301"]
+	object = 826c0c1596cb194f26b2334537324377bda1c112
+	path = AddressService
+	stage = sync
+	type = extract module
+[map "34ce692c-e0dd-3ab6-b5e4-22d3390ae441"]
+	object = 79e8681c28529aa92302ac3a5986f3f098569c0e
+	path = EmployeeService
+	stage = sync
+	type = extract module
